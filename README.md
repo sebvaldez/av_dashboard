@@ -1,2 +1,1 @@
-# av_dashboard
-a collection of data for AV solarcity
+Check out http://shopify.github.com/dashing for more information.
