@@ -1,1 +1,25 @@
-<div data-bind="value"></div>
+<h1 class="title" data-bind="title"></h1>
+
+
+<div>
+	<table class="table">
+	<thead>
+		<th>Component name:</th>
+		<th>Status:</th>
+		<th>desciption:</th>
+		<th>icon</th>
+	</thead>
+
+	<tbody class="table-striped" data-foreach-item="items">
+		<td class="name" data-bind="item.name"></td>
+		<td class="status" data-bind="item.status"></td>
+		<td class="description" data-bind="item.description"></td>
+		<td>ico test</td>
+
+	</tbody>
+	</table>
+</div>
+
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
