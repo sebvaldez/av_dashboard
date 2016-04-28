@@ -13,7 +13,7 @@ def fixTime (time)
 end
 
 
-SCHEDULER.every '30m', :first_in => 0 do |job|
+SCHEDULER.every '5m', :first_in => 0 do |job|
 
 
 maintenance = HTTParty.get(url)
@@ -46,7 +46,7 @@ end
 
 #puts incidents
 
-print maintenance
+#print maintenance
 
   send_event('scheduled_main', { items: upcoming, incident: incidents } )
 
