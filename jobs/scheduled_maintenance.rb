@@ -48,7 +48,7 @@ end
 
 print maintenance
 
-  send_event('scheduled_main', { items: upcoming, incident: incidents, others: } )
+  send_event('scheduled_main', { items: upcoming, incident: incidents } )
 
 
 end
