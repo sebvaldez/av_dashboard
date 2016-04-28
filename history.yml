@@ -3,32 +3,32 @@ zoom: |+
   data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom","updatedAt":1461390837}
 
 buzzwords: |+
-  data: {"items":[{"label":"Turn-key","value":22},{"label":"Exit strategy","value":7},{"label":"Leverage","value":11},{"label":"Enterprise","value":9},{"label":"Web 2.0","value":6},{"label":"Synergy","value":26},{"label":"Pivoting","value":17},{"label":"Paradigm shift","value":4},{"label":"Streamlininess","value":6}],"id":"buzzwords","updatedAt":1461397170}
+  data: {"items":[{"label":"Exit strategy","value":9},{"label":"Streamlininess","value":0},{"label":"Enterprise","value":19},{"label":"Turn-key","value":6},{"label":"Web 2.0","value":16},{"label":"Leverage","value":28},{"label":"Synergy","value":29},{"label":"Pivoting","value":22},{"label":"Paradigm shift","value":24}],"id":"buzzwords","updatedAt":1461883414}
 
 convergence: |+
-  data: {"points":[{"x":889,"y":0},{"x":890,"y":46},{"x":891,"y":27},{"x":892,"y":45},{"x":893,"y":44},{"x":894,"y":33},{"x":895,"y":45},{"x":896,"y":14},{"x":897,"y":25},{"x":898,"y":4}],"id":"convergence","updatedAt":1461397170}
+  data: {"points":[{"x":784,"y":44},{"x":785,"y":33},{"x":786,"y":38},{"x":787,"y":28},{"x":788,"y":4},{"x":789,"y":33},{"x":790,"y":18},{"x":791,"y":14},{"x":792,"y":25},{"x":793,"y":1}],"id":"convergence","updatedAt":1461883414}
 
 valuation: |+
-  data: {"current":63,"last":48,"id":"valuation","updatedAt":1461397170}
+  data: {"current":69,"last":52,"id":"valuation","updatedAt":1461883414}
 
 karma: |+
-  data: {"current":157151,"last":70154,"id":"karma","updatedAt":1461397170}
+  data: {"current":45288,"last":151265,"id":"karma","updatedAt":1461883414}
 
 synergy: |+
-  data: {"value":35,"id":"synergy","updatedAt":1461397170}
+  data: {"value":83,"id":"synergy","updatedAt":1461883414}
 
 zoom_c: |+
-  data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom_c","updatedAt":1461397135}
+  data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom_c","updatedAt":1461883409}
 
 indicate: |+
   data: {"indicator":"none","description":"All Systems Operational","id":"indicate","updatedAt":1461393307}
 
 zoom_s: |+
-  data: {"notice":{"indicator":"none","description":"All Systems Operational"},"id":"zoom_s","updatedAt":1461397135}
+  data: {"notice":{"indicator":"none","description":"All Systems Operational"},"id":"zoom_s","updatedAt":1461883409}
 
 widget_id: |+
   data: {"id":"widget_id","updatedAt":1461395053}
 
 scheduled_main: |+
-  data: {"id":"scheduled_main","updatedAt":1461397134}
+  data: {"id":"scheduled_main","updatedAt":1461883408}
 

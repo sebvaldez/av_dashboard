@@ -1,4 +1,4 @@
-require 'httparty'
+
 
 url = "https://14qjgk812kgk.statuspage.io/api/v2/summary.json"
 
@@ -17,7 +17,6 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 	indicate = response["status"]
 
 	send_event('zoom_c', { items: component } )
-
 
 	send_event('zoom_s', notice: indicate )
 

@@ -1,5 +1,7 @@
 require 'dashing'
 
+require 'httparty'
+
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
 

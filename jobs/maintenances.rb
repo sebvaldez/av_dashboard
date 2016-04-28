@@ -12,8 +12,10 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 
 	response = response.parsed_response
 
+	maintenance = response["scheduled_maintenances"]
 
 
+	
 
 
 
