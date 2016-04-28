@@ -3,32 +3,32 @@ zoom: |+
   data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom","updatedAt":1461390837}
 
 buzzwords: |+
-  data: {"items":[{"label":"Exit strategy","value":9},{"label":"Streamlininess","value":0},{"label":"Enterprise","value":19},{"label":"Turn-key","value":6},{"label":"Web 2.0","value":16},{"label":"Leverage","value":28},{"label":"Synergy","value":29},{"label":"Pivoting","value":22},{"label":"Paradigm shift","value":24}],"id":"buzzwords","updatedAt":1461883414}
+  data: {"items":[{"label":"Pivoting","value":2},{"label":"Leverage","value":2},{"label":"Paradigm shift","value":1},{"label":"Enterprise","value":1},{"label":"Synergy","value":1},{"label":"Web 2.0","value":1}],"id":"buzzwords","updatedAt":1461886737}
 
 convergence: |+
-  data: {"points":[{"x":784,"y":44},{"x":785,"y":33},{"x":786,"y":38},{"x":787,"y":28},{"x":788,"y":4},{"x":789,"y":33},{"x":790,"y":18},{"x":791,"y":14},{"x":792,"y":25},{"x":793,"y":1}],"id":"convergence","updatedAt":1461883414}
+  data: {"points":[{"x":9,"y":49},{"x":10,"y":40},{"x":11,"y":8},{"x":12,"y":27},{"x":13,"y":29},{"x":14,"y":0},{"x":15,"y":39},{"x":16,"y":16},{"x":17,"y":15},{"x":18,"y":0}],"id":"convergence","updatedAt":1461886737}
 
 valuation: |+
-  data: {"current":69,"last":52,"id":"valuation","updatedAt":1461883414}
+  data: {"current":31,"last":43,"id":"valuation","updatedAt":1461886737}
 
 karma: |+
-  data: {"current":45288,"last":151265,"id":"karma","updatedAt":1461883414}
+  data: {"current":199598,"last":63834,"id":"karma","updatedAt":1461886737}
 
 synergy: |+
-  data: {"value":83,"id":"synergy","updatedAt":1461883414}
+  data: {"value":75,"id":"synergy","updatedAt":1461886737}
 
 zoom_c: |+
-  data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom_c","updatedAt":1461883409}
+  data: {"items":[{"status":"operational","name":"Zoom Meetings","created_at":"2015-01-26T23:04:39.101Z","updated_at":"2016-03-29T19:57:28.977Z","position":1,"description":"Access to meetings","group_id":null,"id":"3z7b6jks10hm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Video Webinars","created_at":"2015-01-26T23:04:39.115Z","updated_at":"2016-03-29T19:57:29.818Z","position":2,"description":"Access to video webinars","group_id":null,"id":"q4msk5dl4bhm","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Zoom Cloud Room Connector","created_at":"2015-01-26T23:08:04.212Z","updated_at":"2016-03-16T21:41:11.991Z","position":3,"description":"Access for H.323/SIP endpoints","group_id":null,"id":"3ml2fn8g0psv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Group Messaging","created_at":"2015-01-26T23:08:19.770Z","updated_at":"2016-03-16T21:41:12.000Z","position":4,"description":"Access to Group Chats","group_id":null,"id":"t2jk6yrqbp4j","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false},{"status":"operational","name":"Telephone Services","created_at":"2015-01-26T23:08:50.964Z","updated_at":"2016-03-16T21:41:12.008Z","position":6,"description":"Access to Telephony Services","group_id":null,"id":"ntdt65v1f9rv","page_id":"14qjgk812kgk","group":false,"only_show_if_degraded":false}],"id":"zoom_c","updatedAt":1461886721}
 
 indicate: |+
   data: {"indicator":"none","description":"All Systems Operational","id":"indicate","updatedAt":1461393307}
 
 zoom_s: |+
-  data: {"notice":{"indicator":"none","description":"All Systems Operational"},"id":"zoom_s","updatedAt":1461883409}
+  data: {"notice":{"indicator":"none","description":"All Systems Operational"},"id":"zoom_s","updatedAt":1461886721}
 
 widget_id: |+
   data: {"id":"widget_id","updatedAt":1461395053}
 
 scheduled_main: |+
-  data: {"id":"scheduled_main","updatedAt":1461883408}
+  data: {"items":{"name":"Meeting Backend Maintenance: 4/30/16 (No Operational Impact)","status":"scheduled","created_at":"2016-04-26T17:40:06.668-07:00","updated_at":"2016-04-26T17:40:06.990-07:00","monitoring_at":null,"resolved_at":null,"shortlink":"http://stspg.io/2Eah","scheduled_for":"Saturday, 30 Apr  6:00 AM","scheduled_until":"Saturday, 30 Apr  2:00 PM","id":"mzjd71h213zq","page_id":"14qjgk812kgk","incident_updates":[{"status":"scheduled","body":"We will be performing a routine maintenance on our Meeting Backend on April 30th 2016. \r\n\r\nThere is no operational impact. All services will be available during this scheduled update.","created_at":"2016-04-26T17:40:06.989-07:00","updated_at":"2016-04-26T17:40:06.989-07:00","display_at":"2016-04-26T17:40:06.989-07:00","id":"78wf11lkrrm6","incident_id":"mzjd71h213zq"}],"impact":"none"},"incident":{"status":"scheduled","body":"We will be performing a routine maintenance on our Meeting Backend on April 30th 2016. \r\n\r\nThere is no operational impact. All services will be available during this scheduled update.","created_at":"2016-04-26T17:40:06.989-07:00","updated_at":"2016-04-26T17:40:06.989-07:00","display_at":"2016-04-26T17:40:06.989-07:00","id":"78wf11lkrrm6","incident_id":"mzjd71h213zq"},"id":"scheduled_main","updatedAt":1461886721}
 

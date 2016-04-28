@@ -1,10 +1,9 @@
 
-#require 'httparty'
+# Upcoming maintenance 
 url = "http://14qjgk812kgk.statuspage.io/api/v2/scheduled-maintenances/upcoming.json"
 
 
 #formatTime function
-
 def fixTime (time)
 	require 'date'
 	time = DateTime.parse(time)
@@ -15,15 +14,17 @@ end
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
 
-
+# Get and parse upcoming maintenance JSON
 maintenance = HTTParty.get(url)
 maintenance = maintenance.parsed_response
 
 maintenance = maintenance["scheduled_maintenances"][0]
 
+# Create empty hashed for loop below
 upcoming = Hash.new
 incidents = Hash.new
 
+# puts key and values into the "Local" upcoming hash
 if maintenance
 	maintenance.each do |key, val|
 		upcoming["#{key}"] = val
@@ -39,16 +40,10 @@ else
 end
 
 
-
+# Put incidents array from upcoming in its own hash
 upcoming["incident_updates"][0].each do |key, val|
 	incidents["#{key}"] = val
 end
 
-#puts incidents
-
-#print maintenance
-
   send_event('scheduled_main', { items: upcoming, incident: incidents } )
-
-
 end
