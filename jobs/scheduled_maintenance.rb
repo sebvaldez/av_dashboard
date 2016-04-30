@@ -12,7 +12,7 @@ def fixTime (time)
 end
 
 
-SCHEDULER.every '5m', :first_in => 0 do |job|
+SCHEDULER.every '1m', :first_in => 0 do |job|
 
 # Get and parse upcoming maintenance JSON
 maintenance = HTTParty.get(url)
@@ -46,4 +46,6 @@ upcoming["incident_updates"][0].each do |key, val|
 end
 
   send_event('scheduled_main', { items: upcoming, incident: incidents } )
+  puts "Maintenance & Incidents have been fetched!"
+
 end

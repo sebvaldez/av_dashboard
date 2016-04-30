@@ -14,12 +14,15 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 
 	component = response["components"]
 
-	indicate = response["status"]
+	unless component.empty?
+		
+		if component["status"] == "operational"
+			#component["icon"] == arrow.
+		else
+		end
 
 	send_event('zoom_c', { items: component } )
 
-	send_event('zoom_s', notice: indicate )
-
-	puts "component has been fetched!"
+	puts "Components have been fetched!"
  
 end

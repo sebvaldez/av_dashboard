@@ -1,24 +1,31 @@
-<h1 class="title" data-bind="title"></h1>
-
-
 <div>
+<img src="assets/ZoomLogo.png">
+
+<h3 class="title" data-bind="title"></h3>
+</div>
+
 	<table class="table">
 	<thead>
-		<th>Component name:</th>
-		<th>Status:</th>
-		<th>desciption:</th>
-		<th>icon</th>
+		<th>Component</th>
+		<th>Status</th>
+		<th></th>
 	</thead>
 
-	<tbody class="table-striped" data-foreach-item="items">
-		<td class="name" data-bind="item.name"></td>
-		<td class="status" data-bind="item.status"></td>
-		<td class="description" data-bind="item.description"></td>
-		<td>ico test</td>
+	<tbody data-foreach-item="items">
+		<td>
+			<p class="name" data-bind="item.name"></p>
+		</td>
+
+		<td>
+			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+		</td>
+		
 
 	</tbody>
 	</table>
-</div>
+
+
+
 
 
 <p class="more-info" data-bind="moreinfo"></p>
