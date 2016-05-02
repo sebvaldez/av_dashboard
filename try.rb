@@ -1,28 +1,30 @@
-## TEST 
+# ## this file should contain a class to 
+#   connect to multiple different enpoints
 
-require "httparty"
+class Connection
+	require "httparty"
 
-url = "https://14qjgk812kgk.statuspage.io/api/v2/summary.json"
+	attr_accessor version:, query:
 
-response = HTTParty.get(url)
+	DEFAULT_BASE_URL = "https://api.zoom.us"
 
-response = response.parsed_response
+	DEFAULT_VERSON = "/v1"
 
-components = Hash.new
+	DEFAULT_QUERY
 
-# Loop through Components Array indices and fix group_id: null
-response["components"].each do |index|
-	index["group_id"] = "OverWrote"
-	# print index["group_id"]
-end
+	def initialize(version: DEFAULT_VERSON, query: DEFAULT_QUERY)
 
-response['components'].each do |index|
-	if index['status'] == 'operational'
-		index["icon"] = 'fa fa-check-circle'
-	else
-		index["icon"] = 'fa fa-exclamation-triangle'
+		@connetion = self.Connection
+
 	end
-end
 
-components = response['components']
-print components
+	private
+
+	def api_key
+
+
+		
+	end
+
+
+end

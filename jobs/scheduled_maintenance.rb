@@ -10,7 +10,7 @@ def fixTime (time)
 end
 
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
+SCHEDULER.every '1.2m', :first_in => 0 do |job|
 
 # Get and parse upcoming maintenance JSON
 maintenance = HTTParty.get(url)
