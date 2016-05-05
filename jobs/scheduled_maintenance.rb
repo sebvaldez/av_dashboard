@@ -1,15 +1,6 @@
 # Upcoming maintenance JSON URL ENPOINT
 url = "http://14qjgk812kgk.statuspage.io/api/v2/scheduled-maintenances/upcoming.json"
 
-# FormatTime function
-def fixTime (time)
-	require 'date'
-	time = DateTime.parse(time)
-	time = time.strftime("%A, %d %b %l:%M %p")
-	time 
-end
-
-
 SCHEDULER.every '1.2m', :first_in => 0 do |job|
 
 # Get and parse upcoming maintenance JSON
@@ -39,19 +30,6 @@ else
 	upcoming = { 'name'=> 'Maintenance', 'status'=> 'No upcoming maintenance', 'scheduled_for'=> 'none', 'scheduled_until'=> 'none'}
 	incidents = { 'body'=> 'Zoom has returned that there will be no upcoming maintenance' }
 end
-puts "Maintenance & Incidents have been fetched!"
-print "\n"
-print "\n"
-		# Debugging pring to console
-		print "upcoming hash: "
-		print "\n"
-		print upcoming
-		print "\n"
-		print "\n"
-		print "incidents hash: "
-		print "\n"
-		print incidents
-
 
 send_event('scheduled_main', { items: upcoming, incident: incidents } )
 
