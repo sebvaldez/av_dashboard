@@ -26,10 +26,9 @@ response['components'].each do |index|
 	end
 end
 
+# fill components hash
 components = response['components']
 
 send_event('zoom_c', { items: components } )
-
-puts "Components have been fetched!"
  
 end
