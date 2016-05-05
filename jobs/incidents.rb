@@ -1,4 +1,3 @@
-require 'JSON'
 require './lib/methods.rb'
 require 'time'
 
