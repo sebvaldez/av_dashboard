@@ -1,21 +1,24 @@
-<i data-bind-class="incident.icon"></i>
-
-<h3 class="title" data-bind="title"></h3><br>
 
 
-<span data-bind="incident.name"></span><br><br>
-
-<span>Created at: </span><br>
-<span data-bind="incident.created_at"></span><br><br>
-
-<span>Impact: </span>
-<span data-bind="incident.impact"></span><br><br>
-
-<span>Message: </span>
-<p data-bind="incident.body"></p>
+<h3 class="title" data-bind="title"></h3>
 
 
+<div>
+	 <i data-bind-class="incident.icon"></i>
+</div>
 
+<div>
+	<span>Name:</span>&nbsp;<span data-bind="incident.name"></span><br>
+	<span data-bind="incident.created_at"></span>
+	
+</div>
+<br>
+<div>
+	
+	<span>Impact:</span><span data-bind="incident.impact"></span><br>
+	<span>Message:</span>&nbsp;<span data-bind="incident.body"></span>
+	
+</div>
 
 <p class="more-info" data-bind="moreinfo"></p>
 <p class="updated-at" data-bind="updatedAtMessage"></p>
