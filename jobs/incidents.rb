@@ -13,21 +13,17 @@ response = response.parsed_response
 
 incident = Hash.new
 
-
-
 unless response['incidents'].empty?
 
-	response['incidents'].each do |item|
-
+	response['incidents'][0].each do |key, value|
 		incident['icon'] = 'fa fa-exclamation-circle'
-
-		incident['name']       = item['incidents'][0]['name']
-		incident['created_at'] = item['incidents'][0]['created_at']
-		incident['impact']     = item['incidents'][0]['impact']
-		incident['body']       = item['incidents'][0]['incident_updates'][0]['body']
+		incident[key] = value
 	end
 
-	# Use Fix time method
+	incident['incident_updates'][0].each do |key, value|
+		incident[key] = value
+	end
+	incident.delete('incident_updates')
 	incident['created_at'] = fixTime(incident['created_at'])
 
 else
