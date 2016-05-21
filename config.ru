@@ -2,9 +2,14 @@ require 'dashing'
 
 require 'httparty'
 
+require './lib/zoomAPI.rb'
+
+require './lib/methods.rb'
+
 require 'date'
 
 require 'time'
+
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
