@@ -32,7 +32,7 @@ def zoomAPI( endpoint, params = {} )
 end
 
 
-# Get all zoom users
+# Get all List of zoom users
 def zoomUsers
 	
 	page_number = 1
