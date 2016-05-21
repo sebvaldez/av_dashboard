@@ -1,4 +1,4 @@
-require './lib/zoomAPI.rb'
+
 
 SCHEDULER.every '1m', :first_in => 0 do |job|
 

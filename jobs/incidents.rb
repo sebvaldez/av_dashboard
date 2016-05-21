@@ -1,5 +1,4 @@
-require './lib/methods.rb'
-require 'time'
+
 
 url = "https://14qjgk812kgk.statuspage.io/api/v2/incidents/unresolved.json"
 
