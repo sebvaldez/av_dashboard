@@ -1,5 +1,6 @@
 require './lib/zoomAPI.rb'
 
+
 SCHEDULER.every '5m', :first_in => 0 do |job|
 
 # Create a To and From date string with in a billing cycle

@@ -1,4 +1,4 @@
-require 'httparty'
+
 
 url = "http://14qjgk812kgk.statuspage.io/api/v2/scheduled-maintenances/upcoming.json"
 

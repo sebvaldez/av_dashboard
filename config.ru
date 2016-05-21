@@ -2,10 +2,6 @@ require 'dashing'
 
 require 'httparty'
 
-require './lib/zoomAPI.rb'
-
-require './lib/methods.rb'
-
 require 'date'
 
 require 'time'
