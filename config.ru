@@ -2,6 +2,10 @@ require 'dashing'
 
 require 'httparty'
 
+require 'date'
+
+require 'time'
+
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
 
