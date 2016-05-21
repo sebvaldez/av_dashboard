@@ -1,0 +1,35 @@
+
+<p id="top">
+	<i class="fa fa-phone-square" aria-hidden="true"></i>
+	<span data-bind="title"></span>
+</p>
+
+
+
+<p class="cycle">Billing cycle:</p>
+
+
+<span class="cycle" data-bind="from"></span>&nbsp; -> &nbsp;<span class="cycle" data-bind="to"></span>
+
+<br>
+<hr style="width: 80%; margin-bottom: 5px">
+<table>
+	<thead>
+		<th>Call Out Cost:</th>
+		<th>Toll Free Cost:</th>
+	</thead>
+	<tbody>
+		<td>
+			<i class="fa fa-usd" aria-hidden="true"></i>
+			<span data-bind="callOut"></span>
+		</td>
+
+		<td>
+			<i class="fa fa-usd" aria-hidden="true"></i>
+			<span data-bind="tollFree"></span>
+		</td>
+	</tbody>
+</table>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
