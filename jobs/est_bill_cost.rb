@@ -71,7 +71,7 @@ user_url = zoomAPI( 'v1/report/getaccountreport',
 
 
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
+SCHEDULER.every '8h', :first_in => 0 do |job|
 
 
 
