@@ -1,4 +1,6 @@
 
+<% content_for :title do %>AV Dashinboard<% end %>
+
 <div class="gridster">
   <ul>
 
@@ -19,13 +21,9 @@
       <div data-id="scheduled_main" data-view="ScheduledMaintenances" data-title="Scheduled Maintenances:"></div>
     </li>
 
-
-
     <li data-row="3" data-col="3" data-sizex="2" data-sizey="1">
       <div data-id="incidents" data-view="Incident" data-title="Incidents:"></div>
     </li>
-
-
 
     <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="total_users" data-view="TotalUsers" data-title="Total Users"></div>
@@ -36,6 +34,9 @@
       <div data-id="active_users" data-view="ActiveUsers" data-title="Active Users"></div>
     </li>
      
+    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="recorders" data-view="TotalRecorders" data-title="Users With Record:"></div>
+    </li>     
 
   </ul>
 </div>
