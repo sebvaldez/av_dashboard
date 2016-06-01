@@ -1,0 +1,29 @@
+<div data-bind-class="result.class">
+
+<p class="title">
+<i class="fa fa-eye" aria-hidden="true"></i>
+<span data-bind="title"></span>
+</p>
+<div class="results">
+
+	<div id="left">
+		<p class="id">Recording Users:</p>
+		<p class="number" data-bind="result.recording_users"></p>	
+	</div>
+
+	<div id="right">
+		<p class="id">Standard Users:</p>
+		<p class="number" data-bind="result.standard_users"></p>
+	</div>
+
+</div>
+	
+
+<br clear="both">
+<p class="message" data-bind="result.message"></p>
+	
+</div><!-- end of either fix or healthy -->
+
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
