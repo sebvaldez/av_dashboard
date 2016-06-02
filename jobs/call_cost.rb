@@ -1,11 +1,12 @@
 require './lib/zoomAPI.rb'
+require 'pry'
 
-
-SCHEDULER.every '5m', :first_in => 0 do |job|
+SCHEDULER.every '5h', :first_in => 0 do |job|
 
 # Create a To and From date string with in a billing cycle
 now = Date.today()
-to = Date.new(now.year, now.month, 15)
+
+to = Date.new(now.year, now.month, now.day)
 from = Date.new(now.year, now.month - 1, 16)
 
 # Call Records for last billing cycle
@@ -58,8 +59,8 @@ callRecords.each do |record|
 end
 
  	# Round costs
-	call_out_cost = "%2.f" % call_out_cost
-	toll_free_cost = "%2.f" % toll_free_cost
+	call_out_cost = "%02.f" % call_out_cost
+	toll_free_cost = "%02.f" % toll_free_cost
 
 	# Format To and From dates for widget
 	formatTo = to.strftime("%A, %B %e, %G")
