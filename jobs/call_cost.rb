@@ -1,5 +1,4 @@
 require './lib/zoomAPI.rb'
-require 'pry'
 
 SCHEDULER.every '5h', :first_in => 0 do |job|
 
