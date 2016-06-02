@@ -1,6 +1,6 @@
 require './lib/zoomAPI.rb'
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
+SCHEDULER.every '4h', :first_in => 0 do |job|
 
 	# Create a 'To' & 'From' for active user enpoint within Billing cycle
 	now = Date.today
