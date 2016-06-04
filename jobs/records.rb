@@ -1,6 +1,7 @@
 require './lib/zoomAPI.rb'
 
-SCHEDULER.every '4h', :first_in => 0 do |job|
+
+SCHEDULER.every '3h', :first_in => 0 do |job|
 
 	# Variables
 	recording_users = ''
@@ -23,8 +24,19 @@ SCHEDULER.every '4h', :first_in => 0 do |job|
 	url_for_toal_users = zoomAPI( 'v1/user/list', { :page_count=>30, :page_number=>1 } )
 	user_list = HTTParty.post( url_for_toal_users )
 	user_list = user_list.parsed_response
-
 	total_users = user_list['total_records']
+
+	# GET current list of zoom rooms
+	zrURL = zoomAPI( 'v1/metrics/zoomrooms', {:page_size=>30, :page_count=>1 } )
+	response = HTTParty.post( zrURL )
+	currentZoomoomCount = response['total_records']
+
+	## FOR SOME REASON THE COUNT IS OFF BY TWO, SO I AM MAKING COUNT OF ZR - 2
+
+	currentZoomoomCount = ( currentZoomoomCount - 2 )
+
+	# Remove zoomRooms from total_users count (zoom rooms are not in  standard user group )
+	total_users = ( total_users - currentZoomoomCount )
 
 	# Total_Recording users
 	group_list['groups'].map {|x| if x['name'] == "Recording" then recording_users = x['total_members'] end }
@@ -32,7 +44,8 @@ SCHEDULER.every '4h', :first_in => 0 do |job|
 	# Total_Standard users
 	group_list['groups'].map {|x| if x['name'] == "Standard User Group" then standard_users = x['total_members'] end }
 
-	# Sum total from both groups
+
+	# Sum total from  groups
 	sum_of_users_in_group = standard_users + recording_users
 
 	if sum_of_users_in_group < total_users then

@@ -1,7 +1,7 @@
 # Upcoming maintenance JSON URL ENPOINT
 url = "http://14qjgk812kgk.statuspage.io/api/v2/scheduled-maintenances/upcoming.json"
 
-SCHEDULER.every '1.2m', :first_in => 0 do |job|
+SCHEDULER.every '3m', :first_in => 0 do |job|
 
 # Get and parse upcoming maintenance JSON
 maintenance = HTTParty.get(url)
