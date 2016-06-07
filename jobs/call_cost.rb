@@ -1,6 +1,6 @@
 require './lib/zoomAPI.rb'
 
-SCHEDULER.every '1h', :first_in => 0 do |job|
+SCHEDULER.every '25m', :first_in => 0 do |job|
 
 # Create a To and From date string with in a billing cycle
 now = Date.today()
@@ -11,10 +11,10 @@ from = Date.new(now.year, now.month - 1, 16)
 
 url = zoomAPI( 'v1/report/getaudioreport',
 			 {
-			  	 :from=>from,
-			 	 :to=>to,
-			 	 :page_count=>6000,
-			 	 :page_number=>1
+					:from=>from,
+					:to=>to,
+					:page_size=>6000,
+					:page_number=>1
 			 	}
 			 )
 response = HTTParty.post(url)
