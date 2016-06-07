@@ -1,5 +1,5 @@
 require 'uri'
-require 'HTTParty'
+require 'httparty'
 
 # Creates
 def zoomAPI( endpoint, params = {} )
