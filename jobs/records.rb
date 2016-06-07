@@ -1,7 +1,7 @@
 require './lib/zoomAPI.rb'
 
 
-SCHEDULER.every '3h', :first_in => 0 do |job|
+SCHEDULER.every '15m', :first_in => 0 do |job|
 
 	# Variables
 	recording_users = ''
