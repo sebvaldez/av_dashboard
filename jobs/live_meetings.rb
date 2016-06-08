@@ -5,7 +5,7 @@ require './lib/zoomAPI.rb'
 SCHEDULER.every '1m', :first_in => 0 do |job|
 
 # Use Metic meetings endpoint
-meetings = zoomAPI( 'v1/metrics/meetings', {:type=>1} )
+meetings = zoomAPI( 'metrics/meetings', {:type=>1} )
 meeting_response = HTTParty.post(meetings)
 
 # Parse results
@@ -15,7 +15,7 @@ total_meetings = meeting_response['total_records']
 
 
 # User Metrics Webinar meetings endpoint
-webinar = zoomAPI( 'v1/metrics/webinars' , {:type=>1} )
+webinar = zoomAPI( 'metrics/webinars' , {:type=>1} )
 
 webinar_response = HTTParty.post(webinar)
 

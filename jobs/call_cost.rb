@@ -9,7 +9,7 @@ from = Date.new(now.year, now.month - 1, 16)
 
 # Call Records for current Billing cycle
 
-url = zoomAPI( 'v1/report/getaudioreport',
+url = zoomAPI( 'report/getaudioreport',
 			 {
 					:from=>from,
 					:to=>to,

@@ -9,7 +9,7 @@ SCHEDULER.every '2h', :first_in => 0 do |job|
 
 	# Create URL for Post
 	page_number = 1
-	url = zoomAPI( 'v1/report/getaccountreport',
+	url = zoomAPI( 'report/getaccountreport',
 					{
 						:from=>from,
 						:to=>to,
