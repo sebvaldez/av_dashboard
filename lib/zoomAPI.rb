@@ -12,6 +12,8 @@ def zoomAPI( endpoint, params = {} )
 
 	dataType = "data_type=JSON"
 
+	version = 'v1/'
+
 	results = Array.new
 
 	# Adds Key, Secret and DataType to passed Array
@@ -27,7 +29,7 @@ def zoomAPI( endpoint, params = {} )
 	end
 
 	# Create and reurn one Url for HTTPARY to use
-	url = "#{baseUri}" + "#{endpoint}" + "?" +  results.join('&')
+	url = "#{baseUri}" + "#{version}" +  "#{endpoint}" + "?" +  results.join('&')
 	return url
 end
 
