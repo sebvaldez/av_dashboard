@@ -20,7 +20,7 @@ SCHEDULER.every '5h', :first_in => 0 do |job|
 	to = Date.new(now.year, now.month - 1, 16)
 
 	# Get some call records
-	url = zoomAPI( 'v1/report/getaudioreport', {:from=>from, :to=>to, :page_number=>1, :page_size=>6000} )
+	url = zoomAPI( 'report/getaudioreport', {:from=>from, :to=>to, :page_number=>1, :page_size=>6000} )
 	response = HTTParty.post(url)
 	total_records = response['total_records']
 

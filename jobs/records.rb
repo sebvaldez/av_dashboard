@@ -15,19 +15,19 @@ SCHEDULER.every '15m', :first_in => 0 do |job|
 	alert_class = ''
 
 	# Get Zoom groups and their total_members
-	url_for_groups = zoomAPI( 'v1/group/list')
+	url_for_groups = zoomAPI( 'group/list')
 
 	group_list = HTTParty.post( url_for_groups )
 	group_list = group_list.parsed_response
 	
 	# Get lastest count of zoom users
-	url_for_toal_users = zoomAPI( 'v1/user/list', { :page_count=>30, :page_number=>1 } )
+	url_for_toal_users = zoomAPI( 'user/list', { :page_count=>30, :page_number=>1 } )
 	user_list = HTTParty.post( url_for_toal_users )
 	user_list = user_list.parsed_response
 	total_users = user_list['total_records']
 
 	# GET current list of zoom rooms
-	zrURL = zoomAPI( 'v1/metrics/zoomrooms', {:page_size=>30, :page_count=>1 } )
+	zrURL = zoomAPI( 'metrics/zoomrooms', {:page_size=>30, :page_count=>1 } )
 	response = HTTParty.post( zrURL )
 	currentZoomoomCount = response['total_records']
 
