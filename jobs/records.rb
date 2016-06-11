@@ -29,7 +29,7 @@ SCHEDULER.every '3m', :first_in => 0 do |job|
 	# GET current list of zoom rooms
 	zrURL = zoomAPI( 'metrics/zoomrooms', {:page_size=>30, :page_count=>1 } )
 	response = HTTParty.post( zrURL )
-	currentZoomoomCount = response['total_records']
+	currentZoomRoomCount = response['total_records']
 
 	## FOR SOME REASON THE COUNT IS OFF BY TWO, SO I AM MAKING COUNT OF ZR - 2
 
