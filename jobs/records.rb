@@ -1,7 +1,7 @@
 require './lib/zoomAPI.rb'
 
 
-SCHEDULER.every '15m', :first_in => 0 do |job|
+SCHEDULER.every '3m', :first_in => 0 do |job|
 
 	# Variables
 	recording_users = ''
@@ -33,10 +33,10 @@ SCHEDULER.every '15m', :first_in => 0 do |job|
 
 	## FOR SOME REASON THE COUNT IS OFF BY TWO, SO I AM MAKING COUNT OF ZR - 2
 
-	currentZoomoomCount = ( currentZoomoomCount - 2 )
+	currentZoomRoomCount = ( currentZoomRoomCount - 2 )
 
 	# Remove zoomRooms from total_users count (zoom rooms are not in  standard user group )
-	total_users = ( total_users - currentZoomoomCount )
+	total_users = ( total_users - currentZoomRoomCount )
 
 	# Total_Recording users
 	group_list['groups'].map {|x| if x['name'] == "Recording" then recording_users = x['total_members'] end }
