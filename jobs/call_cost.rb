@@ -5,10 +5,13 @@ SCHEDULER.every '25m', :first_in => 0 do |job|
 # Create a To and From date string with in a billing cycle
 now = Date.today()
 to = Date.new(now.year, now.month, now.day + 1)
-from = Date.new(now.year, now.month - 1, 16)
+if now.day >= 16
+	from = Date.new(now.year, now.month, 16)
+else
+	from = Date.new(now.year, now.month - 1, 16)
+end
 
 # Call Records for current Billing cycle
-
 url = zoomAPI( 'report/getaudioreport',
 			 {
 					:from=>from,
@@ -21,7 +24,7 @@ response = HTTParty.post(url)
 response = response.parsed_response
 
 callRecords = response['telephony_usage']
-
+binding.pry
 call_out_cost  = 0
 toll_free_cost = 0
 count          = 0
