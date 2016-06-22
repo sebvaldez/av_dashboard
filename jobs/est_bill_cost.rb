@@ -2,12 +2,16 @@ require'./lib/zoomAPI.rb'
 
 # Constants in Bill
 constants = {
-	:user_block => 32625.00,
-	:large_meeting => 5773.90,
-	:webinar_block => 9600.00,
-	:room_connector_block => 490.00,
-	:audio_commit_block	=> 3000.00,
-	:cloud_block => 500.00
+	:std_user => 21960.00,
+	:lg_100 => 3500.00,
+	:lg_200 => 3250.00,	
+	:lg_300 => 1120.00,	
+	:lg_500 => 1200.00,	
+	:webinar_1000 => 680.00,
+	:webinar_3000 => 990.00,
+	:cloud_record_100gb => 500.00,
+	:room_connector_block => 245.00,
+	:audio_commit_block	=> 3000.00
 }
 
 SCHEDULER.every '5h', :first_in => 0 do |job|
@@ -29,7 +33,8 @@ SCHEDULER.every '5h', :first_in => 0 do |job|
 	call_out_cost = 0.00
 	toll_free_cost = 0.00
 	sub_cost = 0.00
-	bill_overages = 0.00
+	estimated_cost = 0.00
+	cpu = 0.00
 
 	if total_records > constants[:audio_commit_block] then 
 
@@ -43,21 +48,29 @@ SCHEDULER.every '5h', :first_in => 0 do |job|
 
 		items_cost = constants.values.reduce(:+)
 		sub_cost = ( call_out_cost + toll_free_cost )
-		bill_overages = (sub_cost - 3000.00 + items_cost )
-		bill_overages = "%.02f" % bill_overages
+		estimated_cost = (sub_cost - 3000.00 + items_cost )
+		estimated_cost = "%.02f" % estimated_cost
+
+		cpu = ( estimated_cost.to_f / @active_users )
+		cpu = "%.02f" % cpu
 	else
 		estimated_cost = constants.values.reduce(:+)
 		estimated_cost =  "%.02f" % estimated_cost
-
+		cpu = ( estimated_cost.to_f / @active_users )
+		cpu = "%.02f" % cpu
 	end
+	print estimated_cost
+	print "\n"
+	print cpu
+	totals = { :estimate => estimated_cost, :costPerUser=>cpu}
 
-	cpu = ( bill_overages.to_f / @active_users )
-	cpu = "%.02f" % cpu
-
-	totals = { :estimate => bill_overages, :costPerUser=>cpu}
+	### past active user goes here
+	# it will user past active user and 
+	#the previous to this current estimated cost
 
   send_event('bill_estimate', { final: totals } )
 
-
-
 end
+
+
+
