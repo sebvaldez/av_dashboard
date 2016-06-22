@@ -24,7 +24,6 @@ response = HTTParty.post(url)
 response = response.parsed_response
 
 callRecords = response['telephony_usage']
-binding.pry
 call_out_cost  = 0
 toll_free_cost = 0
 count          = 0
