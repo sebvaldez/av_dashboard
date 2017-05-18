@@ -4,10 +4,11 @@
 About
 ---
 
-A way for our team to keep in the know
-about our cost and current usage.
+* Informs team of any current problems with Zoom.Us service.
+* Provides Usage & Cost information accociated with the account.
+* Lists upcoming maintenance.
+* Real-time meeings (Meetings & Webinars)
 
-We have dedicated info utilizing widgets.
 
 
 
