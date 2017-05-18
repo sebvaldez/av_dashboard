@@ -11,4 +11,6 @@ We have dedicated info utilizing widgets.
 
 
 
-
+Authors
+---
+[Sebstian Valdez] (https://github.com/interstellaridea)
